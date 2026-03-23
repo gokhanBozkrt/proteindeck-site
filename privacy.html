@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — ProteinDeck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #070C18; --navy2: #0D1830;
+    --blue: #4A9EFF; --white: #F0F4FF; --muted: #8896B0;
+    --border: rgba(74,158,255,0.15);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--navy); color: var(--white); font-family: 'DM Sans', sans-serif; line-height: 1.7; }
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.5rem 2rem; border-bottom: 1px solid var(--border);
+  }
+  .nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+  .nav-icon {
+    width: 36px; height: 36px; border-radius: 9px; background: var(--navy2);
+    border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--blue);
+  }
+  .nav-name { font-weight: 500; font-size: 1rem; color: var(--white); }
+  nav a.back { font-size: 0.85rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+  nav a.back:hover { color: var(--blue); }
+  .content { max-width: 720px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+  h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .updated { font-size: 0.85rem; color: var(--muted); margin-bottom: 3rem; }
+  h2 { font-size: 1.1rem; font-weight: 500; color: var(--white); margin: 2.5rem 0 0.75rem; }
+  p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
+  ul { color: var(--muted); font-size: 0.95rem; padding-left: 1.25rem; margin-bottom: 1rem; }
+  ul li { margin-bottom: 0.4rem; }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .divider { height: 1px; background: var(--border); margin: 2rem 0; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-icon">P</div>
+    <span class="nav-name">ProteinDeck</span>
+  </a>
+  <a href="/" class="back">← Back to home</a>
+</nav>
+
+<div class="content">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: March 2026</p>
+
+  <p>ProteinDeck ("we", "our", or "us") is committed to protecting your privacy. This policy explains what information we collect, how we use it, and your rights.</p>
+
+  <div class="divider"></div>
+
+  <h2>Information We Collect</h2>
+  <p>ProteinDeck collects minimal data necessary to operate the app:</p>
+  <ul>
+    <li><strong>Anonymous device identifier</strong> — a randomly generated ID stored on your device, used solely for AI request rate limiting. This is never linked to your identity.</li>
+    <li><strong>StoreKit transaction ID</strong> — if you subscribe to Premium, your Apple transaction ID is stored locally on your device to verify your subscription status. We never receive or store payment information.</li>
+    <li><strong>Study data</strong> — your flashcard decks, review history, and quiz results are stored locally on your device using SwiftData. This data never leaves your device unless you explicitly use iCloud backup.</li>
+  </ul>
+
+  <h2>AI Features</h2>
+  <p>When you use AI features (clinical notes, quiz generation), the following data is sent to our secure backend:</p>
+  <ul>
+    <li>Protein name, gene name, and function text — to generate relevant content</li>
+    <li>Your anonymous device/transaction ID — for rate limiting only</li>
+    <li>Your selected language preference</li>
+  </ul>
+  <p>This data is processed via OpenAI's API and is subject to <a href="https://openai.com/privacy" target="_blank">OpenAI's privacy policy</a>. We do not store AI prompts or responses on our servers beyond the immediate request.</p>
+
+  <h2>Data We Do Not Collect</h2>
+  <ul>
+    <li>We do not collect your name, email, or any personal identifiers</li>
+    <li>We do not track your location</li>
+    <li>We do not use analytics SDKs or advertising trackers</li>
+    <li>We do not sell your data to third parties</li>
+    <li>We do not create user profiles</li>
+  </ul>
+
+  <h2>Third-Party Services</h2>
+  <p>ProteinDeck uses the following third-party services:</p>
+  <ul>
+    <li><strong>UniProt</strong> — protein database queries. See <a href="https://www.uniprot.org/help/privacy" target="_blank">UniProt's privacy policy</a>.</li>
+    <li><strong>AlphaFold (EMBL-EBI)</strong> — 3D protein structure data. See <a href="https://www.ebi.ac.uk/data-protection/privacy-notice/alphafold" target="_blank">AlphaFold's privacy policy</a>.</li>
+    <li><strong>OpenAI</strong> — AI content generation. See <a href="https://openai.com/privacy" target="_blank">OpenAI's privacy policy</a>.</li>
+    <li><strong>Apple StoreKit</strong> — subscription management. See <a href="https://www.apple.com/privacy/" target="_blank">Apple's privacy policy</a>.</li>
+  </ul>
+
+  <h2>Data Retention</h2>
+  <p>All personal study data (decks, reviews, quiz results) is stored locally on your device and is deleted when you uninstall the app. Anonymous rate-limiting identifiers on our backend are automatically deleted after 30 days of inactivity.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>ProteinDeck is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this privacy policy from time to time. We will notify you of significant changes by updating the "Last updated" date above.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this privacy policy, contact us at <a href="mailto:support@proteindeck.app">support@proteindeck.app</a>.</p>
+</div>
+</body>
+</html>
